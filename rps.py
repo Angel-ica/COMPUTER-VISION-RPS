@@ -1,4 +1,5 @@
 #importing necessary libraries
+from tkinter import *
 import random
 import cv2 as cv
 import numpy as np
@@ -7,7 +8,7 @@ from keras.models import load_model
 loaded_model = load_model('keras_model.h5')
 #creating a list of valid computer moves
 opponent_moves =['rock','paper','scissors']
-
+tk=Tk()
 #create game class
 class RPS:
     def __init__(self,opponent_moves,loaded_model):
@@ -43,6 +44,8 @@ class RPS:
                     break
 
 def run_game():
+    #after 5000 miliseconds, run the game
+    tk.after(5000)
     game=RPS(opponent_moves,loaded_model)
     game.get_player_choice()
 
