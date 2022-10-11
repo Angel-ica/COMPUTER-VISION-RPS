@@ -12,7 +12,7 @@ opponent_moves =['rock','paper','scissors']
 class RPS:
     def __init__(self,opponent_moves,loaded_model):
         self.player_name=input('your name: ')
-        self.computer_choice= random.choice(opponent_moves)
+        #self.computer_choice= random.choice(opponent_moves)
         #self.player_choice=loaded_model.predict
 
     def get_player_choice(self):
@@ -33,10 +33,11 @@ class RPS:
                 #print(prediction)
                 print('rps')
                 max_index=np.argmax(prediction[0])
-                for index,value in enumerate(opponent_moves):
-                    print(index,value)
-                    print(f"{self.player_name} chose {max_index}")
-                print(f"opponent chose {self.computer_choice}")
+                #for index,value in enumerate(prediction):
+                    #print(value)
+                print(f"{self.player_name} chose {max_index}")
+                computer_choice = random.choice(opponent_moves)
+                print(f"opponent chose {computer_choice}")
                 # Press q to close the window
                 if cv.waitKey(1) & 0xFF == ord('q'):
                     break
