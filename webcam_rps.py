@@ -112,7 +112,10 @@ def play_game():
                 print(f"\nbetter luck next time {name}, you lose...")
                 break
             else:
-                print(f"\nit's a tie! how about another game to settle...")
+                print(f"\n uh oh! it's a tie!\n")
                 break
 play_game()
 
+
+
+#play_again()
