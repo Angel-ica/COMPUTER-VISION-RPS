@@ -5,7 +5,6 @@ import time
 import cv2 as cv
 import numpy as np
 import random
-#from labels3 import moves_values
 from keras.models import load_model
 #load our trained models
 loaded_model=load_model('keras_model.h5', compile =True)
