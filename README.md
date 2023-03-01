@@ -12,6 +12,7 @@ The main task of image classification/ recognition is performed in 'webcam_rps.p
 
 import time 
 --- Best out of 3 wins, time is used to countdown to next round.
+--------------------------------
 import cv2 as cv 
 --- cv2 is used for image processing, to capture and display the player's moves. 
 import numpy as np
