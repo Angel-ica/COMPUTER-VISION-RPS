@@ -12,16 +12,28 @@ The main task of image classification/ recognition is performed in 'webcam_rps.p
 
 import time 
 --- Best out of 3 wins, time is used to countdown to next round.
+
 --------------------------------
 import cv2 as cv 
 --- cv2 is used for image processing, to capture and display the player's moves. 
+
+--------------------------------
 import numpy as np
 --- numpy is used to store the image for prediction.
+
+--------------------------------
 import random 
 --- randomly select the opponent's (the computer's) move.
-from keras.models import load_model --- keras.models is a module in the keras library for providing an interface for training nn models.
+
+--------------------------------
+from keras.models import load_model 
+--- keras.models is a module in the keras library for providing an interface for training nn models.
+
+--------------------------------
 loaded_model=load_model('keras_model.h5', compile =True) 
 --- uses the 'load_model' function to load the pretrained model in 'keras_model.h5' file. Compile =True means that after loading, the model will be recompiled using the same parameters during training. 
+
+--------------------------------
 moves =['rock','paper','scissors','nothing'] 
 --- a list of valid moves. 
 
