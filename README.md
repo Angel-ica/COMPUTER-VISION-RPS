@@ -38,4 +38,4 @@ moves =['rock','paper','scissors','nothing']
 --- a list of valid moves. 
 
 --------------------------------
-A timer specifys the start of a new round and points are awarded to the winner of each round. After 3 rounds, the winner is announced and then the game terminates. (An option to play again is available.)
+A timer specifies the start of a new round and points are awarded to the winner of each round. After 3 rounds, the winner is announced and then the game terminates. (An option to play again is available.)
